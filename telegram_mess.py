@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, executor
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 
-API_KEY = '5580778028:AAG8sDCc-S3bWYARllyBJGDasUyre5S-y7g'
+API_KEY = ''
 
 #bot = telebot.TeleBot(API_KEY)
 bot = Bot(token=API_KEY)
@@ -29,7 +29,7 @@ def date_order():
 #   Функционал, который отправляет уведомления об истечении срока определенным людям из списка all_user.
 #   ('723232562'- testing id)
 async def on_start(_):
-    all_user = ['723232562']
+    all_user = ['000000000']
     for user_id in all_user:
         await bot.send_message(chat_id=user_id, text=f"Здравствуйте. Сегодня истек срок поставки у данного(-ых)"
                                                      f" заказа(-ов) 😔: \n"
